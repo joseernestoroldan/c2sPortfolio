@@ -11,10 +11,10 @@ import { workCardType } from "@/types";
 const WorkCard = ({ title, language, description, image }: workCardType) => {
   return (
     // <div className="flex flex-row w-[70%] h-[300px] border border-gray-600 border-opacity-35 p-8 group mx-auto rounded-2xl relative hover:scale-105 hover:bg-gray-300 hover:dark:bg-slate-700 hover:dark:bg-opacity-30">
-    <div className="flex flex-row w-[70%] h-[300px]  p-8 group mx-auto rounded-[5px] relative hover:scale-105 bg-gradient-to-br dark:from-black dark:via-gray-700 dark:to-black from-transparent via-gray-400 to-transparent">
-      <div className="w-1/2  flex flex-col items-center justify-start space-y-4">
+    <div className="flex flex-col md:flex-row w-[90%] lg:w-[70%] h-auto space-y-4 md:space-y-0 p-8 group mx-auto rounded-[5px] relative hover:scale-105 bg-gradient-to-br dark:from-black dark:via-gray-700 dark:to-black from-transparent via-gray-400 to-transparent">
+      <div className="w-full md:w-1/2  flex flex-col items-center justify-start space-y-4">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="flex flex-col items-center text-2xl font-semibold opacity-70">
+          <h1 className="flex flex-col items-center justify-center text-center text-lg sm:text-2xl font-semibold opacity-70">
             {title}
           </h1>
           <div className="flex flex-row justify-center items-center opacity-70">
@@ -34,8 +34,8 @@ const WorkCard = ({ title, language, description, image }: workCardType) => {
         </Link>
       </div>
 
-      <div className="w-1/2 flex flex-col justify-start items-center -space-y-2 ">
-        <div className=" relative w-[280px] h-[200px] p-4 group-hover:scale-50 origin-top-right transition-transform duration-500 rounded-[5px] overflow-hidden">
+      <div className="w-full md:w-1/2 flex flex-col justify-start items-center -space-y-2 ">
+        <div className=" relative w-[240px] h-[160px] md:w-[280px] md:h-[200px] p-4 group-hover:scale-50 origin-top-right transition-transform duration-500 rounded-[5px] overflow-hidden">
           <Image
             src={image}
             fill

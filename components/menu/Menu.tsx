@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Menu = () => {
   return (
-    <ul className="flex flex-row justify-between items-center w-[400px]">
+    <ul className="hidden flex-row justify-between items-center w-[400px] md:flex">
       <Link href={"/"}>
         <li>Home</li>
       </Link>
