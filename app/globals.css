@@ -113,7 +113,7 @@ body {
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear infinite;
   display: inline-block;
-  font-size: 190px;
+  font-size: 100px;
   font-family: c2sFont;
   font-weight: 700;
 }
