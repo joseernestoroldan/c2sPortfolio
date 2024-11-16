@@ -43,7 +43,23 @@ const WorkCard = ({ title, language, description, image }: workCardType) => {
             className=" object-cover"
           />
         </div>
-        <div className="absolute flex flex-row justify-end items-center top-[60%] opacity-0 group-hover:opacity-70 transition-opacity duration-500 space-x-4">
+        <div className="absolute hidden md:flex flex-row justify-end items-center top-[60%] opacity-0 group-hover:opacity-70 transition-opacity duration-500 space-x-4">
+          <p className="font-bold">Links:</p>
+          <Link href={"#"}>
+            <ExternalLinkIcon />
+          </Link>
+          <Link href={"#"}>
+            <VercelIcon />
+          </Link>
+          <Link href={"#"}>
+            <NetlifyIcon />
+          </Link>
+          <Link href={"#"}>
+            <GitHubIcon />
+          </Link>
+        </div>
+
+        <div className="pt-8 md:hidden flex flex-row justify-end items-center space-x-4">
           <p className="font-bold">Links:</p>
           <Link href={"#"}>
             <ExternalLinkIcon />

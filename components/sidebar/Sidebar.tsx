@@ -11,37 +11,52 @@ const Sidebar = () => {
     return (
       <GiHamburgerMenu
         onClick={() => setOpen(true)}
-        className="text-white text-2xl"
+        className="text-white text-3xl"
       />
     );
   }
   return (
     <div className="bg-gray-900 bg-opacity-90 top-0 right-0 left-0 h-screen z-20 absolute flex flex-col items-center pt-24 space-y-8">
       <Link href={"/"}>
-        <div className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold">
+        <div
+          onClick={() => setOpen(false)}
+          className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold"
+        >
           Home
         </div>
       </Link>
       <Link href={"/about"}>
-        <div className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold">
+        <div
+          onClick={() => setOpen(false)}
+          className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold"
+        >
           About Me
         </div>
       </Link>
 
       <Link href={"/workd"}>
-        <div className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold">
+        <div
+          onClick={() => setOpen(false)}
+          className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold"
+        >
           Works
         </div>
       </Link>
 
       <Link href={"/contact"}>
-        <div className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold">
+        <div
+          onClick={() => setOpen(false)}
+          className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold"
+        >
           Contact
         </div>
       </Link>
 
       <Link href={"/learn"}>
-        <div className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold">
+        <div
+          onClick={() => setOpen(false)}
+          className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold"
+        >
           Learn
         </div>
       </Link>

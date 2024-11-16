@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="w-full max-w-5xl mx-auto fixed top-0 left-1/2 -translate-x-1/2 z-30">
       <div className="w-full bg-transparent dark:bg-black"><Social/></div>
       <div className="w-full bg-gradient-to-b from-gray-700 to-transparent py-4  flex flex-row justify-around items-center rounded-[5px]">
-        <div className="w-[80px] h-[20px] relative text-white">
+        <div className="w-[110px] h-[30px] relative text-white">
           <Image src={"/LogoColor.svg"} alt="code2steps logo" fill className="text-white"/>
         </div>
         <div className="hidden md:inline-block"><Menu/></div>
