@@ -8,7 +8,21 @@ import { FaGithub as GitHubIcon } from "react-icons/fa";
 import Link from "next/link";
 import { workCardType } from "@/types";
 
-const WorkCard = ({ title, language, description, image }: workCardType) => {
+const WorkCard = ({
+  title,
+  language,
+  description,
+  image,
+  externalLink,
+  vercel,
+  netlify,
+  git,
+}: workCardType) => {
+  console.log("externalLink:", externalLink);
+  console.log("vercel:", vercel);
+  console.log("netlify:", netlify);
+  console.log("git:", git);
+
   return (
     // <div className="flex flex-row w-[70%] h-[300px] border border-gray-600 border-opacity-35 p-8 group mx-auto rounded-2xl relative hover:scale-105 hover:bg-gray-300 hover:dark:bg-slate-700 hover:dark:bg-opacity-30">
     <div className="flex flex-col md:flex-row w-[90%] lg:w-[70%] h-auto space-y-4 md:space-y-0 p-8 group mx-auto rounded-[5px] relative hover:scale-105 bg-gradient-to-br dark:from-black dark:via-gray-700 dark:to-black from-transparent via-gray-400 to-transparent">
@@ -45,34 +59,57 @@ const WorkCard = ({ title, language, description, image }: workCardType) => {
         </div>
         <div className="absolute hidden md:flex flex-row justify-end items-center top-[60%] opacity-0 group-hover:opacity-70 transition-opacity duration-500 space-x-4">
           <p className="font-bold">Links:</p>
-          <Link href={"#"}>
-            <ExternalLinkIcon />
-          </Link>
-          <Link href={"#"}>
-            <VercelIcon />
-          </Link>
-          <Link href={"#"}>
-            <NetlifyIcon />
-          </Link>
-          <Link href={"#"}>
-            <GitHubIcon />
-          </Link>
+
+          {externalLink && (
+            <Link href={externalLink}>
+              <ExternalLinkIcon />
+            </Link>
+          )}
+
+          {vercel && (
+            <Link href={vercel}>
+              <VercelIcon />
+            </Link>
+          )}
+
+          {netlify && (
+            <Link href={netlify}>
+              <NetlifyIcon />
+            </Link>
+          )}
+
+          {git && (
+            <Link href={git}>
+              <GitHubIcon />
+            </Link>
+          )}
         </div>
 
         <div className="pt-8 md:hidden flex flex-row justify-end items-center space-x-4">
           <p className="font-bold">Links:</p>
-          <Link href={"#"}>
-            <ExternalLinkIcon />
-          </Link>
-          <Link href={"#"}>
-            <VercelIcon />
-          </Link>
-          <Link href={"#"}>
-            <NetlifyIcon />
-          </Link>
-          <Link href={"#"}>
-            <GitHubIcon />
-          </Link>
+          {externalLink && (
+            <Link href={externalLink}>
+              <ExternalLinkIcon />
+            </Link>
+          )}
+
+          {vercel && (
+            <Link href={vercel}>
+              <VercelIcon />
+            </Link>
+          )}
+
+          {netlify && (
+            <Link href={netlify}>
+              <NetlifyIcon />
+            </Link>
+          )}
+
+          {git && (
+            <Link href={git}>
+              <GitHubIcon />
+            </Link>
+          )}
         </div>
       </div>
     </div>
