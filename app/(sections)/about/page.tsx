@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <div className="w-full h-auto">
       <Container>
-        <div className="flex flex-col items-center justify-center space-y-10 w-full py-24">
+        <div className="flex flex-col items-center justify-center space-y-10 w-full pt-24">
           <div className="relative w-[200px] h-[200px] sm:h-[250px] sm:w-[250px] rounded-full overflow-hidden bg-gradient-to-b from-gray-300 via-gray-200 to-gray-50 my-10 mix-blend-darken dark:mix-blend-lighten">
             <Image
               src={"/cv-sin fondo.png"}
