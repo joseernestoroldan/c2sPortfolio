@@ -18,10 +18,7 @@ const WorkCard = ({
   netlify,
   git,
 }: workCardType) => {
-  console.log("externalLink:", externalLink);
-  console.log("vercel:", vercel);
-  console.log("netlify:", netlify);
-  console.log("git:", git);
+
 
   return (
     // <div className="flex flex-row w-[70%] h-[300px] border border-gray-600 border-opacity-35 p-8 group mx-auto rounded-2xl relative hover:scale-105 hover:bg-gray-300 hover:dark:bg-slate-700 hover:dark:bg-opacity-30">

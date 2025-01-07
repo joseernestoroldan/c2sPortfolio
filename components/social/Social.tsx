@@ -7,7 +7,7 @@ import { FaWordpress } from "react-icons/fa";
 
 const Social = () => {
   return (
-    <div className='w-full flex flex-row justify-center items-center space-x-4 p-4'>
+    <div className='w-full flex flex-row justify-end items-center space-x-4 py-4'>
         <FaWhatsapp className='text-xl opacity-75'/>
         <FaInstagram className='text-xl opacity-75'/>
         <FaYoutube className='text-xl opacity-75'/>
