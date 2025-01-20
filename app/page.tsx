@@ -8,7 +8,7 @@ export default function Home() {
           <h1 className="font-bold  animate-portada">C2S</h1>
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-xl sm:text-3xl  font-bold animation-subtitle text-center">
-              This is Jose&apos;s Personal Portfolio
+              This is Jose&apos;s Personal Portfolio...
             </h2>
             <h2 className=" text-lg font-semibold animation-subtitle text-center">
               Hope you enjoy!

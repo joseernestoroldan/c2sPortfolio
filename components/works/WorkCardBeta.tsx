@@ -37,7 +37,7 @@ const WorkCard = ({
           <Link href={"#"} className="font-bold underline">
             Read More
           </Link>
-          <div className="flex flex-row justify-start items-start space-x-4">
+          <div className="flex flex-row justify-start items-center space-x-4">
             <p className="font-bold">Links:</p>
 
             {externalLink && (
