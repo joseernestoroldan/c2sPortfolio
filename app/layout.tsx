@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Lato } from "next/font/google";
-import { Karla } from "next/font/google";
+// import { Inter } from "next/font/google";
+// import { Lato } from "next/font/google";
+import { Courier_Prime } from "next/font/google";
+// import { Karla } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const lato = Lato({
-  subsets: ["latin", "latin-ext"],
-  weight: ["100", "300", "400", "700", "900"]
-});
-const karla = Karla({subsets:["latin"]})
+// const inter = Inter({ subsets: ["latin"] });
+// const lato = Lato({
+//   subsets: ["latin", "latin-ext"],
+//   weight: ["100", "300", "400", "700", "900"]
+// });
+// const karla = Karla({subsets:["latin"]})
+
+const Courier = Courier_Prime({subsets:["latin"], weight:["400", "700"]})
 
 export const metadata: Metadata = {
   title: "Code2Steps",
@@ -23,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body  className={karla.className}>{children}</body>
+      <body  className={Courier.className}>{children}</body>
     </html>
   );
 }
