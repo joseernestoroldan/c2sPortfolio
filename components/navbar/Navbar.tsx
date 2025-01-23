@@ -2,6 +2,7 @@ import Image from "next/image";
 import Menu from "../menu/Menu";
 import Social from "../social/Social";
 import Sidebar from "../sidebar/Sidebar";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -11,6 +12,7 @@ const Navbar = () => {
           <Social />
         </div>
         <div className="w-full bg-[#D6DBDC] dark:bg-gray-900 py-4  flex flex-row justify-between items-center">
+          <Link href="/">
           <div className="w-[110px] h-[30px] relative text-white ">
             <Image
               src={"/LogoColor.svg"}
@@ -19,6 +21,7 @@ const Navbar = () => {
               className="dark:invert-0 invert"
             />
           </div>
+          </Link>
           <div className="hidden md:inline-block">
             <Menu />
           </div>
