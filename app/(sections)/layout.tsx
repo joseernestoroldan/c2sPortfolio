@@ -8,7 +8,7 @@ export default function SectionsLayout({
   children: React.ReactNode;
 }>) {
   return (
-        <div>
+        <div className="w-full">
             <Navbar/>
             <div className="w-full">{children}</div>
             

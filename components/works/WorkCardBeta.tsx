@@ -19,8 +19,8 @@ const WorkCard = ({
   git,
 }: workCardType) => {
   return (
-    <div className="flex flex-col w-full max-w-[600px] p-8 border-dotted border-gray-500 border h-auto mx-auto relative rounded-[0px] overflow-hidden">
-      <div className="w-full aspect-video dark:bg-black gray-300 relative ">
+    <div className="flex flex-col w-full p-8 border-dotted border-gray-500 border h-auto mx-auto relative rounded-[0px] overflow-hidden">
+      <div className="w-full aspect-video dark:bg-black gray-300 relative overflow-hidden rounded-[5px] ">
         <Image src={image} fill alt="project image" className=" object-cover" />
       </div>
 
@@ -37,7 +37,7 @@ const WorkCard = ({
           <Link href={"#"} className="font-bold underline">
             Read More
           </Link>
-          <div className="flex flex-row justify-start items-center space-x-4">
+          <div className="flex flex-row justify-start items-center space-x-4 animate-pulse">
             <p className="font-bold">Links:</p>
 
             {externalLink && (
