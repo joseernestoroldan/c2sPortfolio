@@ -11,7 +11,7 @@ const Sidebar = () => {
     return (
       <GiHamburgerMenu
         onClick={() => setOpen(true)}
-        className="text-white text-3xl"
+        className="text-white text-3xl mx-2"
       />
     );
   }
@@ -34,7 +34,7 @@ const Sidebar = () => {
         </div>
       </Link>
 
-      <Link href={"/workd"}>
+      <Link href={"/works"}>
         <div
           onClick={() => setOpen(false)}
           className="text-white text-nowrap w-min text-center capitalize text-xl font-semibold"
