@@ -19,7 +19,7 @@ export function EmblaCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xl flex items-center justify-center  mx-auto"
+      className="w-full max-w-xl flex items-center justify-center  mx-auto bg-gray-400"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
