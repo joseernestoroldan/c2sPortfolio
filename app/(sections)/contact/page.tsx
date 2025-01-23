@@ -27,7 +27,7 @@ const ContactPage = () => {
     // redirect("/contactsent")
   }
   return (
-    <div className="w-full h-auto pt-24 pb-24">
+    <div className="w-full h-auto pt-24 pb-24 px-4">
       <Container>
         <div className="w-full max-w-4xl mx-auto bg-transparent flex flex-col justify-start items-center mt-12">
           <h3 className="text-2xl font-bold text-gray-600 dark:text-white mb-12">Take A Coffee With Me</h3>
