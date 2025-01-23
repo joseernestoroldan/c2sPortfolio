@@ -33,7 +33,7 @@ const WorkCard = ({
         <p className="text-base font-normal my-8 indent-4 text-left md:text-justify">
           {description}
         </p>
-        <div className="w-full flex flex-col sm:flex-row justify-start sm:justify-between items-center">
+        <div className="w-full flex flex-col sm:flex-row justify-start sm:justify-between items-center space-y-4 sm:space-y-0 sm:text-base text-lg">
           <Link href={"#"} className="font-bold underline">
             Read More
           </Link>
