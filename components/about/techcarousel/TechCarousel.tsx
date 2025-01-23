@@ -34,7 +34,7 @@ function TechCarousel() {
     autoplaySpeed: 1000,
   };
   return (
-    <div className="slider-container w-full max-w-[300px] sm:max-w-3xl mx-auto">
+    <div className="slider-container w-full max-[320px]:max-w-lg max-w-3xl mx-auto">
       <Slider {...settings}>
         <div className="w-full">
           <div className="flex flex-col justify-center items-center w-full">
@@ -75,13 +75,13 @@ function TechCarousel() {
         <div className="">
           <div className="flex flex-col justify-center items-center w-full">
             <SanityIcon className=" text-3xl md:text-6xl font-bold text-gray-500 dark:text-gray-300" />
-            <h3 className="text-center text-xs sm:text-base">Sanity.io</h3>
+            <h3 className="text-center text-xs sm:text-base">Sanity</h3>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-center items-center w-full">
             <ContentfulIcon className=" text-3xl md:text-6xl font-bold text-gray-500 dark:text-gray-300" />
-            <h3 className="text-center text-xs sm:text-base">ContentFul</h3>
+            <h3 className="text-center text-xs sm:text-base">ContntFul</h3>
           </div>
         </div>
         <div className="">
@@ -99,13 +99,13 @@ function TechCarousel() {
         <div className="">
           <div className="flex flex-col justify-center items-center w-full">
             <PostgreSqlIcon className=" text-3xl md:text-6xl font-bold text-gray-500 dark:text-gray-300" />
-            <h3 className="text-center text-xs sm:text-base">PostgreSQL</h3>
+            <h3 className="text-center text-xs sm:text-base">PogreSQL</h3>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-center items-center w-full">
             <PrismaIcon className=" text-3xl md:text-6xl font-bold text-gray-500 dark:text-gray-300" />
-            <h3 className="text-center text-xs sm:text-base">Prisma.io</h3>
+            <h3 className="text-center text-xs sm:text-base">Prisma</h3>
           </div>
         </div>
         <div className="">
