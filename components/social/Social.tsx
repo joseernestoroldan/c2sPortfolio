@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaWordpress } from "react-icons/fa";
+
 
 const Social = () => {
   return (
@@ -12,7 +12,7 @@ const Social = () => {
         <FaInstagram className='text-xl opacity-75'/>
         <FaYoutube className='text-xl opacity-75'/>
         <FaGithub className='text-xl opacity-75'/>
-        <FaWordpress className='text-xl opacity-75'/>
+        
     </div>
   )
 }
