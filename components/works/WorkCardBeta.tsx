@@ -30,7 +30,7 @@ const WorkCard = ({
           <p className="text-lg font-medium">Implemented in </p>
           <WorkIcons icon={language} />
         </div>
-        <p className="text-base font-normal my-8 indent-4 text-left">
+        <p className="text-base font-normal my-8 indent-4 text-left md:text-justify">
           {description}
         </p>
         <div className="w-full flex flex-col sm:flex-row justify-start sm:justify-between items-center">

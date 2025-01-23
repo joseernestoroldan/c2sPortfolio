@@ -11,7 +11,7 @@ const Sidebar = () => {
     return (
       <GiHamburgerMenu
         onClick={() => setOpen(true)}
-        className="text-white text-3xl mx-2"
+        className="text-white text-3xl"
       />
     );
   }
