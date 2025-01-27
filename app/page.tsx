@@ -7,12 +7,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center space-y-12 w-full">
           <h1 className="font-bold  animate-portada">C2S</h1>
           <div className="flex flex-col justify-center items-center">
-            <h2 className="animate-portada2">
-              This is my Personal Portfolio
-            </h2>
-            {/* <h3 className=" text-lg font-semibold animation-subtitle text-center">
-              Hope you enjoy!
-            </h3> */}
+            <h2 className="animate-portada2">This is my Personal Portfolio</h2>
           </div>
         </div>
       </div>

@@ -1,4 +1,9 @@
-import React from 'react'
+import { Metadata } from "next"
+
+export const metadata:Metadata = {
+  title: "Learn",
+  description: "About Jose Ernesto Roldan, About c2s"
+}
 
 const LearnPage = () => {
   return (

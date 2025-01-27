@@ -1,8 +1,13 @@
 import { getData } from "@/client";
 import Container from "@/components/container/Container";
 import { workDataType } from "@/types";
-import WorkCard from "@/components/works/workCard";
 import WorkCardBeta from "@/components/works/WorkCardBeta";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title: "Works",
+  description: "About Jose Ernesto Roldan, About c2s"
+}
 
 const WorksPage = async () => {
   const works = await getData("works");

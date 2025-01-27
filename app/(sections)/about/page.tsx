@@ -1,9 +1,13 @@
 import MoreAboutMe from "@/components/about/MoreAboutMe";
 import Container from "@/components/container/Container";
 import Image from "next/image";
-import React from "react";
 import TechCarousel from "@/components/about/techcarousel/TechCarousel";
-import { EmblaCarousel } from "@/components/about/emblacarousel/EmblaCarousel";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title: "About",
+  description: "About Jose Ernesto Roldan, About c2s"
+}
 
 const AboutPage = () => {
   return (
@@ -29,7 +33,7 @@ const AboutPage = () => {
             easier for people.
           </h3>
           <TechCarousel />
-           <MoreAboutMe />
+          <MoreAboutMe />
         </div>
       </Container>
     </div>
