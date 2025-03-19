@@ -19,15 +19,15 @@ export function EmblaCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xl flex items-center justify-center  mx-auto bg-gray-400"
+      className="w-full max-w-xl flex items-center justify-center  mx-auto bg-gray-400 rounded-[5px]"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent className=" w-full max-w-xl mx-auto">
+      <CarouselContent className=" w-full max-w-xl mx-auto border-none rounded-[5px]">
         <CarouselItem>
           <div className="p-1">
-            <Card className=" h-[500px] sm:h-[300px] w-full max-w-5xl bg-gradient-to-br dark:from-black dark:via-gray-900 dark:to-black from-transparent via-gray-200 to-transparent">
-              <CardContent className="flex h-[500px] sm:h-[300px] w-full max-w-5xl items-center justify-center">
+            <Card className="border-none h-[500px] sm:h-[300px] w-full max-w-5xl bg-gradient-to-br dark:from-black dark:via-gray-900 dark:to-black from-transparent via-gray-200 to-transparent">
+              <CardContent className="flex h-[500px] sm:h-[300px] w-full max-w-5xl items-center justify-center border-none">
                 <div className="text-center md:text-justify indent-6 opacity-80 text-gray-900 dark:text-white mx-auto bg-transparent">
                   Greetings! I&apos;m Jose, a seasoned software developer with a
                   passion for crafting exceptional digital experiences. With a

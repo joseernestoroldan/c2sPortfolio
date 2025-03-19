@@ -13,7 +13,7 @@ const MoreAboutMe = () => {
   }, [toggle]);
 
   return (
-    <div  ref={top}  className="flex flex-col justify-start items-center space-y-12 w-full max-w-[760px] lg:max-w-5xl mx-auto text-black dark:text-white \">
+    <div  ref={top}  className="flex flex-col justify-start rounded-[5px] items-center space-y-12 w-full max-w-[760px] lg:max-w-5xl mx-auto text-black dark:text-white over">
       {!toggle && (
         <button
           className="border border-gray-800 dark:border-white border-opacity-20 opacity-70 p-4 rounded-full"
