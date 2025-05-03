@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { EmblaCarousel } from "./emblacarousel/EmblaCarousel";
+import DetailsAboutMe from "./DetailsAboutMe";
 
 const MoreAboutMe = () => {
   const [toggle, setToggle] = useState(false);
@@ -23,7 +23,7 @@ const MoreAboutMe = () => {
         </button>
       )}
 
-      {toggle && <EmblaCarousel />}
+      {toggle && <DetailsAboutMe />}
 
       {toggle && (
         <button
