@@ -63,7 +63,7 @@ const HomeLinks = () => {
           </span>
         </h2>
         <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-          Let us lear together about what we love to do.
+         { 'Let\'s learn together about what we love to do.'}
         </p>
       </Link>
     </div>
