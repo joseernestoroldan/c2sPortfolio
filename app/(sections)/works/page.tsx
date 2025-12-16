@@ -1,10 +1,10 @@
 import { getData } from "@/client";
 import Container from "@/components/container/Container";
 import { workDataType } from "@/types";
-import WorkCardBeta from "@/components/works/WorkCardBeta";
+import WorkCard from "@/components/works/WorkCard"
 import { Metadata } from "next";
 
-export const metadata:Metadata = {
+export const metadata: Metadata = {
   title: "Works",
   description: "About Jose Ernesto Roldan, About c2s"
 }
@@ -28,7 +28,7 @@ const WorksPage = async () => {
               git,
             }: workDataType) => {
               return (
-                <WorkCardBeta
+                <WorkCard
                   key={_id}
                   title={title}
                   description={description}
